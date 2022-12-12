@@ -6,11 +6,11 @@
 /*   By: ouidriss <ouidriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/12 14:23:48 by ouidriss          #+#    #+#             */
-/*   Updated: 2022/12/12 14:26:06 by ouidriss         ###   ########.fr       */
+/*   Updated: 2022/12/12 15:43:55 by ouidriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_printf.h"
+#include  "ft_printf.h"
 
 void	ft_putnbr(int n, int *counter)
 {

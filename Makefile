@@ -1,6 +1,6 @@
 NAME := libftprintf.a
-CC : cc
-CFLAGS : -Wall -Wextra -Werror
+CC = cc
+CFLAGS = -Wall -Wextra -Werror
 SRC := ft_convert_hex.c ft_printf.c ft_putchar.c \
 ft_putnbr.c ft_putnbr_unsigned.c ft_putstr.c
 SRC_OBJ := $(SRC:.c=.o)

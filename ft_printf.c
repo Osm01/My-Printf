@@ -6,11 +6,11 @@
 /*   By: ouidriss <ouidriss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/10 13:31:42 by ouidriss          #+#    #+#             */
-/*   Updated: 2022/12/12 14:38:14 by ouidriss         ###   ########.fr       */
+/*   Updated: 2022/12/12 15:55:57 by ouidriss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_printf.h"
+#include  "ft_printf.h"
 
 static void	after_percent(char character, va_list v_list, int *counter)
 {
@@ -30,8 +30,8 @@ static void	after_percent(char character, va_list v_list, int *counter)
 		ft_convert_hex(va_arg(v_list, unsigned int), counter, 0);
 	if (character == 'p')
 	{
-		ft_putstr("0x10", counter);
-		ft_convert_hex(va_arg(v_list, unsigned int), counter, 0);
+		ft_putstr("0x", counter);
+		ft_convert_hex(va_arg(v_list, size_t), counter, 0);
 	}
 }
 
